@@ -46,7 +46,7 @@ header .box-header nav a {
 
 .box-banner {
   width: 80vw;
-  height: 80vh;
+  height: 70vh;
   display: flex;
   align-items: center;
 }
@@ -75,7 +75,7 @@ header .box-header nav a {
 .btn-blue {
   width: 257px;
   height: 44px;
-  margin-top: 10px;
+  margin-top: 30px;
   border: none;
   background-color: #1173d4;
   color: #fff;
@@ -200,24 +200,6 @@ header .box-header nav a {
   flex-direction: row;
   justify-content: center;
 }
-#cards-feminino .card-fem1,
-#cards-feminino .card-fem2,
-#cards-feminino .card-fem3,
-#cards-feminino .card-fem4,
-#cards-feminino .card-fem5,
-#cards-feminino .card-fem6 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 15px;
-  padding: 1rem;
-  width: 250px;
-  height: 400px;
-  background-color: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-bottom: 20px;
-}
 #cards-feminino img {
   border-radius: 50%;
   width: 100px;
@@ -236,4 +218,42 @@ header .box-header nav a {
   text-align: center;
   width: 80%;
   margin-bottom: 8px;
+}
+
+.card-prev1,
+.card-prev2,
+.card-prev3,
+.card-prev4,
+.card-prev5,
+.card-prev6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px;
+  padding: 1rem;
+  width: 250px;
+  height: 400px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+}
+
+.prevencao-masculina {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f9fa;
+}
+.prevencao-masculina h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-style: bold;
+  background: linear-gradient(to right, #3373d2 0%, #6f95c7 100%, #7bb5f5, #0074ee, #5ea7ef);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }/*# sourceMappingURL=style.css.map */
