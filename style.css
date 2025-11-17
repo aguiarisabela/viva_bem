@@ -132,6 +132,7 @@ header .box-header nav a {
   margin-top: 30px;
   flex-direction: row;
   justify-content: center;
+  gap: 20px;
 }
 
 .card1,
@@ -140,10 +141,11 @@ header .box-header nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 15px;
+  justify-content: flex-start;
+  margin: 0;
   padding: 1rem;
   width: 282px;
-  height: 202px;
+  min-height: 202px;
   background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -192,7 +194,8 @@ header .box-header nav a {
   margin-top: 15px;
 }
 
-#cards-feminino {
+#cards-feminino,
+#cards-masculino {
   display: flex;
   flex-wrap: wrap;
   width: 70%;
@@ -200,8 +203,11 @@ header .box-header nav a {
   margin-top: 30px;
   flex-direction: row;
   justify-content: center;
+  gap: 20px;
+  padding: 0 10px;
 }
-#cards-feminino img {
+#cards-feminino img,
+#cards-masculino img {
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -209,12 +215,14 @@ header .box-header nav a {
   -o-object-fit: cover;
      object-fit: cover;
 }
-#cards-feminino h4 {
+#cards-feminino h4,
+#cards-masculino h4 {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
 }
-#cards-feminino li {
+#cards-feminino li,
+#cards-masculino li {
   font-size: 14px;
   text-align: center;
   width: 80%;
@@ -233,11 +241,12 @@ header .box-header nav a {
   margin: 0 15px;
   padding: 1rem;
   width: 250px;
-  height: 400px;
+  min-height: 400px;
   background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 20px;
+  justify-content: flex-start;
 }
 
 .prevencao-masculina {
@@ -445,4 +454,334 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    height: auto;
+    min-height: 80vh;
+    background-size: cover;
+  }
+  header .box-header {
+    width: 90%;
+    height: auto;
+    min-height: 80px;
+    padding: 15px 20px;
+    border-radius: 40px;
+  }
+  header .box-header img {
+    width: 120px;
+  }
+  header .box-header nav {
+    width: 50%;
+    height: auto;
+  }
+  header .box-header nav a {
+    font-size: 14px;
+  }
+  .box-banner {
+    width: 90%;
+    height: auto;
+    padding: 20px 0;
+  }
+  .box-banner .box-titulo {
+    height: auto;
+    width: 100%;
+  }
+  .box-banner .box-titulo h2 {
+    font-size: 45px;
+    width: 90%;
+  }
+  .box-banner .box-titulo p {
+    font-size: 27px;
+    width: 85%;
+  }
+  .btn-blue,
+  .btn-white {
+    width: 220px;
+    height: 42px;
+  }
+  .exames-rotina {
+    height: auto;
+    padding: 30px 20px;
+  }
+  .exames-rotina h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .exames-rotina p {
+    width: 80%;
+    font-size: 18px;
+  }
+  #cards-exames {
+    width: 90%;
+  }
+  .card1,
+  .card2,
+  .card3 {
+    width: 260px;
+    margin: 0 10px;
+  }
+  .prevencao-feminina h3,
+  .prevencao-masculina h3 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 20px;
+  }
+  #cards-feminino,
+  #cards-masculino {
+    width: 90%;
+    gap: 15px;
+  }
+  .card-prev1,
+  .card-prev2,
+  .card-prev3,
+  .card-prev4,
+  .card-prev5,
+  .card-prev6 {
+    width: 230px;
+    min-height: 380px;
+    margin: 0 10px;
+  }
+  .alertas {
+    height: auto;
+    padding: 30px 20px;
+  }
+  .alertas h3 {
+    font-size: 2rem;
+  }
+  #cards-alerta {
+    max-width: 90%;
+  }
+  .card-alerta {
+    width: 380px;
+  }
+  footer {
+    height: auto;
+    padding: 30px 0 0;
+  }
+  .footer-principal-conteudo {
+    width: 95%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .footer-coluna,
+  .footer-coluna-logo {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  header {
+    height: auto;
+    min-height: 60vh;
+    background-image: none;
+    background-color: #f8f9fa;
+  }
+  header .box-header {
+    width: 363px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 70px;
+    padding: 15px;
+    border-radius: 35px;
+    gap: 15px;
+  }
+  header .box-header img {
+    width: 87px;
+  }
+  header .box-header nav {
+    justify-content: center;
+    gap: 12px;
+  }
+  header .box-header nav a {
+    font-size: 12px;
+    padding: 8px 10px;
+    border-radius: 13px;
+  }
+  .box-banner {
+    width: 95%;
+    height: auto;
+    padding: 20px 0;
+  }
+  .box-banner .box-titulo {
+    height: auto;
+    width: 100%;
+    text-align: center;
+  }
+  .box-banner .box-titulo h2 {
+    font-size: 45px;
+    width: 100%;
+    text-align: center;
+  }
+  .box-banner .box-titulo p {
+    font-size: 27px;
+    width: 100%;
+    text-align: center;
+  }
+  .btn-blue {
+    width: 100%;
+    max-width: 280px;
+    height: 44px;
+  }
+  .btn-white {
+    width: 100%;
+    max-width: 200px;
+    height: 44px;
+  }
+  .exames-rotina {
+    height: auto;
+    padding: 30px 15px;
+  }
+  .exames-rotina h3 {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .exames-rotina p {
+    width: 95%;
+    font-size: 16px;
+  }
+  #cards-exames {
+    width: 95%;
+    flex-direction: column;
+  }
+  .card1,
+  .card2,
+  .card3 {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 0 20px 0;
+  }
+  .prevencao-feminina,
+  .prevencao-masculina {
+    padding: 30px 15px;
+  }
+  .prevencao-feminina h3,
+  .prevencao-masculina h3 {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 0 10px;
+  }
+  #cards-feminino,
+  #cards-masculino {
+    width: 95%;
+    flex-direction: column;
+  }
+  .card-prev1,
+  .card-prev2,
+  .card-prev3,
+  .card-prev4,
+  .card-prev5,
+  .card-prev6 {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    min-height: 380px;
+    margin: 0 0 20px 0;
+  }
+  .alertas {
+    height: auto;
+    padding: 30px 15px;
+  }
+  .alertas h3 {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 0 10px;
+  }
+  #cards-alerta {
+    max-width: 95%;
+    flex-direction: column;
+  }
+  .card-alerta {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    min-height: 140px;
+  }
+  footer {
+    height: auto;
+    padding: 30px 0 0;
+  }
+  .footer-principal-conteudo {
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+  .footer-coluna,
+  .footer-coluna-logo {
+    width: 100%;
+    padding: 0;
+  }
+  .footer-coluna-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-coluna-logo .logo-footer {
+    width: 140px;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  .lista-links a {
+    font-size: 14px;
+  }
+  .footer-copyright {
+    font-size: 14px;
+    text-align: center;
+    padding: 15px 10px;
+  }
+}
+@media (max-width: 480px) {
+  .box-banner .box-titulo h2 {
+    font-size: 45px;
+  }
+  .box-banner .box-titulo p {
+    font-size: 27px;
+  }
+  .exames-rotina h3,
+  .prevencao-feminina h3,
+  .prevencao-masculina h3,
+  .alertas h3 {
+    font-size: 24px;
+  }
+  .card1,
+  .card2,
+  .card3 {
+    width: 282px;
+    height: 202px;
+  }
+  .card-prev1,
+  .card-prev2,
+  .card-prev3,
+  .card-prev4,
+  .card-prev5,
+  .card-prev6 {
+    width: 250px;
+    height: 400px;
+  }
+  .card-prev1 p,
+  .card-prev2 p,
+  .card-prev3 p,
+  .card-prev4 p,
+  .card-prev5 p,
+  .card-prev6 p {
+    font-size: 15px;
+  }
+  .card-alerta {
+    width: 300px;
+    padding: 15px;
+  }
+  .btn-blue {
+    width: 163px;
+  }
+  .btn-white {
+    width: 107px;
+  }
 }/*# sourceMappingURL=style.css.map */
